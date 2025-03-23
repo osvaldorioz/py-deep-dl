@@ -1,7 +1,7 @@
 
 El algoritmo **Deep Reinforcement Learning (DRL)** es una técnica de aprendizaje automático que combina **Redes Neuronales Profundas (DNNs)** con **Aprendizaje por Refuerzo (RL)**. Su objetivo es entrenar a un agente para que tome decisiones óptimas en un entorno desconocido, maximizando una recompensa acumulada a largo plazo.
 
-En este programa se utiliza el algoritmo **Deep Q-Learning (DQL)**, que es una versión mejorada del Q-Learning tradicional. DQL emplea una red neuronal para aproximar la función de valor de acción \( Q(s, a) \), que estima la recompensa esperada para cada acción \( a \) en un estado \( s \).
+En este programa se utiliza el algoritmo **Deep Q-Learning (DQL)**, que es una versión mejorada del Q-Learning tradicional. DQL emplea una red neuronal para aproximar la función de valor de acción Q(s,a), que estima la recompensa esperada para cada acción \( a \) en un estado \( s \).
 
 ---
 
@@ -9,13 +9,13 @@ En este programa se utiliza el algoritmo **Deep Q-Learning (DQL)**, que es una v
 
 #### **1. Estructura del Código**
 El código tiene dos partes principales:
-- **C++ con Pybind11**: Implementa el cálculo de la política de aprendizaje, la actualización de la función \( Q(s, a) \) y la toma de decisiones.
+- **C++ con Pybind11**: Implementa el cálculo de la política de aprendizaje, la actualización de la función Q(s,a) y la toma de decisiones.
 - **Python**: Se encarga de ejecutar el entrenamiento y visualizar los resultados.
 
 #### **2. Funcionamiento del Algoritmo**
 1. **Inicialización**  
    - Se define un agente **DeepQLearningAgent** con un espacio de estados y acciones.
-   - Se inicializan los parámetros clave: tasa de aprendizaje (\( \alpha \)), factor de descuento (\( \gamma \)), y epsilon (\( \epsilon \)) para la exploración-explotación.
+   - Se inicializan los parámetros clave: tasa de aprendizaje (α), factor de descuento (γ), y epsilon (ϵ) para la exploración-explotación.
 
 2. **Ciclo de Entrenamiento**  
    - Para cada episodio:
