@@ -28,7 +28,7 @@ El código tiene dos partes principales:
      5. Se repite hasta que se complete el episodio.
 
 3. **Actualización de Epsilon**  
-   - Se reduce gradualmente \( \epsilon \) para disminuir la exploración a medida que el agente aprende.
+   - Se reduce gradualmente γ (Epsilon) para disminuir la exploración a medida que el agente aprende.
 
 4. **Visualización de Resultados**  
    - Se genera una gráfica en Python que muestra la evolución de la recompensa total a lo largo de los episodios.
